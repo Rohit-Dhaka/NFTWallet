@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NFT Wallet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/image/image1.png" type="image/x-icon">
+</head>
+<body>
+    <section class="f-f-poppins  ">
+        <nav class="bg-color h-50 d-flex align-items-center h-sm-95">
+            <div class="container ">
+                <div class="d-flex justify-content-between">
+                    <div class=" d-flex  align-items-center gap-63">
+                        <div class="d-flex fw-700 line-height-normal d-flex align-items-center gap-25 gap-2">
+                            <div class="menuicon">
+                                <span class="bar bar1"></span>
+                                <span class="bar bar2"></span>
+                                <span class="bar bar3"></span>
+                            </div>
+                            <img src="./assets/image/image1.png" alt="logo-image" class="w-32 ">
+                            <h2 class="color-black fs-xl fw-700 m-0">NFTsee</h2>
+                        </div>
+                        <ul class="d-flex gap-59 p-0 m-0 menulist">
+                            <li><a href="#">Feed</a></li>
+                            <li><a href="#">Wallet</a></li>
+                        </ul>                       
+                    </div>
+                    <div class="d-flex  justify-content-center gap-25 align-items-center gap-9">
+                        <div id="myOverlay" class="overlay">
+                            <div class="overlay-content position-relative m-auto">
+                                <form action="/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search"
+                                        class="fs-md border-0 bg-white">
+                                    <button type="submit" class="border-0 fs-md color-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                            <span class="closebtn text-danger bg-transparent" onclick="closeSearch()"
+                                title="Close Overlay">×</span>
+                        </div>
+                        <button class="openBtn d-block d-lg-none" onclick="openSearch()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z"
+                                    fill="black" />
+                            </svg>
+                        </button>
+                        <div class="search d-none d-lg-block">
+                            <input type="text" placeholder="Search here..." class="border-0 outline-0  Bg-white ">
+                        </div>
+                        <label class="tog">
+                            <span class="slider round"></span>
+                        </label>
+                        <img src="./assets/image/Ellipse9.svg" alt="image" class="w-32">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-image">
+        </div>
+    </section>
+    <section class="bg-color f-f-poppins">
+        <div class="container">
+            <div class="box Bg-white mb-70">
+                <div class="d-flex justify-content-between flex-column-reverse flex-sm-row">
+                    <div class="d-flex gap-sm-47 align-items-end flex-wrap text-center text-lg-start">
+                        <div class="text-center   W-100 ">
+                            <img src="./assets/image/Ellipse13.svg" alt="image" class=" w-150">
+                        </div>
+                        <div class="d-flex flex-column pt-3 pt-sm-0 W-100">
+                            <h1 class="m-0 fw-600 fs-xl line-height-180 color-black">Lorem Mollis</h1>
+                            <h6 class="color-black opacity-50 m-0  fw-400 fs-md pt-2">@loremmollis</h6>
+                            <div class="pt-sm-34 pb-sm-14 d-flex gap-sm-44 gap-30 pt-18 ">
+                                <div class="  text-start">
+                                    <h5 class="m-0 fw-500 color-black opacity-50 fs-lg">156</h5>
+                                    <h6
+                                        class="m-0 color-black line-height-normal fw-400 fs-sm opacity-50 font-style-normal ">
+                                        Following</h6>
+                                </div>
+                                <div class="r-line"></div>
+                                <div class="  text-start">
+                                    <h5 class="m-0 fw-500 color-black opacity-50 fs-lg ">457</h5>
+                                    <h6 class="m-0 color-black line-height-normal fw-400 fs-sm opacity-50 pe-44">
+                                        Following</h6>
+                                </div>
+                                <div class="r-line"></div>
+                                <div class="text-end">
+                                    <h5 class="m-0 fw-500 color-black opacity-50 fs-lg">382</h5>
+                                    <h6 class="m-0 color-black line-height-normal fw-400 fs-sm opacity-50 pl-44">Owned
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-end transform-y9">
+                        <button class="border-0 bg-black text-white btn-1 fw-600 text-nowrap ">Edit Profile</button>
+                    </div>
+                </div>
+                <div class="line mt-lg-52 mt-21">
+                </div>
+                <p class="fs-md fw-400 line-height-180 color-black opacity-50 pt-23 m-0">
+                    Rhoncus facilisis cursus tortor varius vitae. Tristique varius arcu sit pretium viverra. Ornare hac
+                    posuere integer molestie mi aliquam quis in eget. Non arcu tempor sed facilisis non aliquet
+                    adipiscing ullamcorper massa. Sapien ornare sit odio id lorem vitae. Ipsum, lacus cursus iaculis
+                    praesent cursus consectetur. Dolor ac faucibus in tempor adipiscing eget. Risus venenatis, ut fames
+                    libero, cras eu ut.
+                </p>
+            </div>
+            <div class="row ">                                                
+                <div class="col-6 col-md-3 px-sm-3 px-2">                    
+                    <img src="./assets/image/Group35.png" alt="image" class="w-100 mb-34 mb-3 " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group36.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group37.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group38.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group39.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group40.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group41.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group42.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group43.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group44.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group45.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group46.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group47.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group48.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group49.png" alt="image" class="w-100 mb-34 mb-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+                <div class="col-6 col-md-3 px-sm-3 px-2">
+                    <img src="./assets/image/Group50.png" alt="image" class="w-100 pb-54 " data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog ">
+                    <div class="row modal-box  position-relative m-5">
+                        <div class="col-12 col-lg-7 ">
+                            <img src="./assets/image/Rectangle21.png" alt="image" class="w-100">
+                        </div>
+                        <div class="col-12 col-lg-5 pt-4 pt-lg-0">
+                            <div class="comment-box h-100">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex gap-35">
+                                        <div class="d-flex gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M7 3C4.239 3 2 5.216 2 7.95C2 10.157 2.875 15.395 11.488 20.69C11.6423 20.7839 11.8194 20.8335 12 20.8335C12.1806 20.8335 12.3577 20.7839 12.512 20.69C21.125 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3C14.239 3 12 6 12 6C12 6 9.761 3 7 3Z"
+                                                    stroke="black" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                            <p class="m-0 fs-md fw-400 line-height-normal color-black">10</p>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M14 19C17.771 19 19.657 19 20.828 17.828C22 16.657 22 14.771 22 11C22 7.229 22 5.343 20.828 4.172C19.657 3 17.771 3 14 3H10C6.229 3 4.343 3 3.172 4.172C2 5.343 2 7.229 2 11C2 14.771 2 16.657 3.172 17.828C3.825 18.482 4.7 18.771 6 18.898"
+                                                    stroke="black" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path
+                                                    d="M14.0002 19C12.7642 19 11.4022 19.5 10.1592 20.145C8.16124 21.182 7.16224 21.701 6.67024 21.37C6.17824 21.04 6.27124 20.015 6.45824 17.966L6.50024 17.5"
+                                                    stroke="black" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            <p class="m-0 fs-md fw-400 line-height-normal color-black">12</p>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M17.5002 22C16.9664 22.0061 16.4385 21.8887 15.9576 21.6569C15.4768 21.4251 15.0561 21.0851 14.7285 20.6637C14.4008 20.2422 14.1752 19.7507 14.0692 19.2275C13.9631 18.7043 13.9796 18.1637 14.1172 17.648L7.85722 14.07C7.32914 14.5538 6.66515 14.8636 5.95514 14.9575C5.24513 15.0515 4.52341 14.9249 3.8877 14.5951C3.25199 14.2652 2.73301 13.748 2.40101 13.1134C2.06902 12.4788 1.94005 11.7575 2.03158 11.0472C2.12312 10.3369 2.43072 9.67182 2.91274 9.14212C3.39477 8.61241 4.02793 8.24363 4.72649 8.08571C5.42506 7.92779 6.15528 7.98835 6.81828 8.2592C7.48129 8.53005 8.04504 8.99809 8.43322 9.59997L14.1162 6.35097C14.0427 6.07315 14.0037 5.78732 14.0002 5.49997C13.9933 4.6882 14.2662 3.89883 14.7732 3.26477C15.2801 2.6307 15.99 2.19068 16.7834 2.01879C17.5768 1.8469 18.4052 1.95363 19.1291 2.32103C19.853 2.68842 20.4282 3.29403 20.7579 4.03588C21.0875 4.77774 21.1515 5.61052 20.939 6.39401C20.7265 7.1775 20.2505 7.86385 19.5912 8.33747C18.9319 8.8111 18.1295 9.04308 17.3192 8.99436C16.5088 8.94564 15.74 8.61918 15.1422 8.06997L8.99222 11.585C8.98522 11.845 8.94922 12.102 8.88322 12.353L15.1432 15.93C15.5622 15.5455 16.0687 15.269 16.6187 15.1246C17.1687 14.9801 17.7457 14.9721 18.2995 15.1012C18.8534 15.2302 19.3674 15.4925 19.7969 15.8652C20.2264 16.2379 20.5585 16.7098 20.7643 17.2399C20.9702 17.77 21.0436 18.3423 20.9781 18.9072C20.9127 19.4721 20.7104 20.0125 20.3888 20.4815C20.0671 20.9505 19.636 21.334 19.1326 21.5986C18.6292 21.8632 18.0689 22.001 17.5002 22ZM17.5002 17C17.1024 17 16.7209 17.158 16.4396 17.4393C16.1583 17.7206 16.0002 18.1021 16.0002 18.5C16.0002 18.8978 16.1583 19.2793 16.4396 19.5606C16.7209 19.8419 17.1024 20 17.5002 20C17.898 20 18.2796 19.8419 18.5609 19.5606C18.8422 19.2793 19.0002 18.8978 19.0002 18.5C19.0002 18.1021 18.8422 17.7206 18.5609 17.4393C18.2796 17.158 17.898 17 17.5002 17ZM5.50022 9.99997C5.10239 9.99997 4.72086 10.158 4.43956 10.4393C4.15825 10.7206 4.00022 11.1021 4.00022 11.5C4.00022 11.8978 4.15825 12.2793 4.43956 12.5606C4.72086 12.8419 5.10239 13 5.50022 13C5.89804 13 6.27957 12.8419 6.56088 12.5606C6.84218 12.2793 7.00022 11.8978 7.00022 11.5C7.00022 11.1021 6.84218 10.7206 6.56088 10.4393C6.27957 10.158 5.89804 9.99997 5.50022 9.99997ZM17.5002 3.99997C17.3032 3.99997 17.1082 4.03877 16.9262 4.11415C16.7442 4.18953 16.5788 4.30002 16.4396 4.43931C16.3003 4.57859 16.1898 4.74395 16.1144 4.92594C16.039 5.10793 16.0002 5.30298 16.0002 5.49997C16.0002 5.69695 16.039 5.892 16.1144 6.07399C16.1898 6.25598 16.3003 6.42134 16.4396 6.56063C16.5788 6.69992 16.7442 6.8104 16.9262 6.88579C17.1082 6.96117 17.3032 6.99997 17.5002 6.99997C17.898 6.99997 18.2796 6.84193 18.5609 6.56063C18.8422 6.27932 19.0002 5.89779 19.0002 5.49997C19.0002 5.10214 18.8422 4.72061 18.5609 4.43931C18.2796 4.158 17.898 3.99997 17.5002 3.99997Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
+                                <h5 class="m-0  fw-400 line-height-normal fs-md opacity-50 pt-3">Comments</h5>
+                                <div class="d-flex gap-21 flex-column pt-3">
+                                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                                    <div class="d-flex align-items-start gap-14">
+                                        <img src="./assets/image/Ellipse14.svg" alt="image">
+                                        <div class="bg-white text-comment">
+                                            <h5 class="m-0 fw-400 fs-md line-height-normal">Jhone Doe</h5>
+                                            <h6 class="m-0 pt-2 fs-md fw-400 line-height-normal opacity-50">Pulvinar viverra ac mauris magna lobortis ultrices.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-14">
+                                        <img src="./assets/image/Ellipse15.svg" alt="image">
+                                        <div class="bg-white text-comment">
+                                            <h5 class="m-0 fw-400 fs-md line-height-normal">Jhone Doe</h5>
+                                            <h6 class="m-0 pt-2 fs-md fw-400 line-height-normal opacity-50">Pulvinar viverra ac mauris magna lobortis ultrices.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-14">
+                                        <img src="./assets/image/Ellipse16.svg" alt="image">
+                                        <div class="bg-white text-comment">
+                                            <h5 class="m-0 fw-400 fs-md line-height-normal">Jhone Doe</h5>
+                                            <h6 class="m-0 pt-2 fs-md fw-400 line-height-normal opacity-50">Pulvinar viverra ac mauris magna lobortis ultrices.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-14">
+                                        <img src="./assets/image/Ellipse17.svg" alt="image">
+                                        <div class="bg-white text-comment">
+                                            <h5 class="m-0 fw-400 fs-md line-height-normal">Jhone Doe</h5>
+                                            <h6 class="m-0 pt-2 fs-md fw-400 line-height-normal opacity-50">Pulvinar
+                                                viverra ac
+                                                mauris magna lobortis ultrices.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
