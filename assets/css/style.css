@@ -26,7 +26,7 @@
 /* ----------------font-weight------------ */
 /* ----------------navbar---------------- */
 ul li a {
-    font-size: 18px;
+    font-size: var(--fs-md);
     font-weight: 400;
     line-height: normal;
     color: var(--black);
@@ -93,13 +93,11 @@ ul li a:hover{
     border-right: 1px solid #CCCCCC !important;
 }
 .box {
-    padding: 39px 38px 38px 39px;
+    padding: 39px 38px 38px 39px;    
     border-radius: 30px;
     transform: translateY(-160px);
     box-shadow: 0px 38px 85px -19px rgba(0, 0, 0, 0.10);
 }
-
-
 .max-w-225 {
     max-width: 225px;
 }  
@@ -110,7 +108,6 @@ ul li a:hover{
     border-right: 1px solid black;
     opacity: 0.5;
 }
-
 .line {
     height: 1px;
     width: 100%;
@@ -172,7 +169,7 @@ body.dark path {
 }
 .overlay .closebtn {
     width: 10%;
-    font-size: 50px;
+    font-size: var(--fs-xl);
     cursor: pointer;
 }
 .overlay input[type=text] {
@@ -247,12 +244,12 @@ body.dark path {
     align-items: center;
     margin: auto;
 }
-.comment-box {
+.comment-box{
+    height: 635px !important;       
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: var(--bg-color);
     padding: 21px 34px 26px 27px;
 }
-
 .text-comment {
     padding: 12px 17px;
     border-radius: 0px 20px 10px 10px;
@@ -269,10 +266,22 @@ body.dark path {
 .btn-close {
     background-color: white !important;
     padding: 20px;
+    opacity: 1;
     border-radius: 50%;
     position: absolute;
     right: -28px;
-    top: -28px;
+    top: -28px;    
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);    
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+.min-h-350{
+    max-height: 530px;
+    background-color: red;
 }
 @media (max-width:574px) {
     .gap-9 {
@@ -340,11 +349,12 @@ body.dark path {
     .W-100 {
         width: 100%;
     }
-    .transform-y9 {
-        transform: translateY(9px);
-    }
+    
     .mb-70{
         margin-bottom: -70px;
+    }
+    .transform-y{
+        transform: translateY(14px);
     }
 }
 @media (min-width: 576px) {
